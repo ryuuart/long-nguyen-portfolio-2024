@@ -28,7 +28,20 @@
 }
 
 body {
+  margin: 0;
+
   font:
-    normal normal 1rem "PP Neue Montreal",
+    normal normal 1.5rem "PP Neue Montreal",
     sans-serif;
+}
+
+button {
+  border: 0;
+  background: none;
+
+  padding: 0;
+}
+
+a:visited {
+  color: initial;
 }
