@@ -6,10 +6,13 @@ import { SITE_TITLE } from "../consts";
   <nav>
     <h2><a href="/">{SITE_TITLE}</a></h2>
     <div class="links-container">
-      <div class="links-cta">
-        <a href="">Contact</a>
-      </div>
-      <button class="menu">
+      <ul class="links-list">
+        <li class="desktop-only"><a href="">Art</a></li>
+        <li class="desktop-only"><a href="">Blog</a></li>
+        <li class="desktop-only"><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <button class="menu mobile-only">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -27,10 +30,6 @@ import { SITE_TITLE } from "../consts";
 </header>
 
 <style>
-  header {
-    margin: 1rem 1.5rem;
-  }
-
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -44,12 +43,59 @@ import { SITE_TITLE } from "../consts";
     flex-flow: row nowrap;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+
+    margin: 0 0.5rem;
+  }
+
   .links-container {
     display: flex;
     flex-flow: row nowrap;
+    align-items: flex-end;
+  }
+
+  .links-list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
   }
 
   .menu {
+    position: relative;
+    top: 0.5rem;
+
     margin-left: 0.5rem;
+  }
+
+  @media screen and (min-width: 325px) {
+    .links-container {
+      align-items: unset;
+    }
+
+    .links-list {
+      align-items: unset;
+    }
+
+    .menu {
+      position: unset;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .mobile-only {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
   }
 </style>
