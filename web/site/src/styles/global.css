@@ -26,3 +26,9 @@
   font-style: italic;
   font-display: swap;
 }
+
+body {
+  font:
+    normal normal 1rem "PP Neue Montreal",
+    sans-serif;
+}
