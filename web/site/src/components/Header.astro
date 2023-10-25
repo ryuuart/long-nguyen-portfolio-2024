@@ -30,6 +30,14 @@ import { SITE_TITLE } from "../consts";
 </header>
 
 <style>
+  header {
+    position: fixed;
+
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -90,6 +98,10 @@ import { SITE_TITLE } from "../consts";
   }
 
   @media screen and (min-width: 769px) {
+    header {
+      position: static;
+    }
+
     .mobile-only {
       display: none;
     }
