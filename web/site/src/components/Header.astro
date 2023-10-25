@@ -2,7 +2,7 @@
 import { SITE_TITLE } from "../consts";
 ---
 
-<header>
+<header class="section">
   <nav>
     <h2><a href="/">{SITE_TITLE}</a></h2>
     <div class="links-container">
@@ -30,10 +30,6 @@ import { SITE_TITLE } from "../consts";
 </header>
 
 <style>
-  header {
-    margin: 1.5rem;
-  }
-
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -43,6 +39,8 @@ import { SITE_TITLE } from "../consts";
   }
 
   nav {
+    margin: 1.5rem;
+
     display: flex;
     flex-flow: row nowrap;
   }

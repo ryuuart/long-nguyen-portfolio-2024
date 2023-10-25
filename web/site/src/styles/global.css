@@ -46,8 +46,7 @@ a:visited {
   color: initial;
 }
 
-/* This is to center and add space to content appropriately and uniformly to all site content*/
-.site-frame {
+.section {
   margin: auto;
 
   max-width: 66ch;
