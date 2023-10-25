@@ -27,12 +27,11 @@
   font-display: swap;
 }
 
-html,
 body {
-  height: 100%;
-}
+  position: relative;
 
-body {
+  min-height: calc(100vh - env(safe-area-inset-bottom));
+
   margin: 0;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -63,5 +62,6 @@ a:visited {
 .section {
   margin: auto;
 
+  width: 100%;
   max-width: 66ch;
 }

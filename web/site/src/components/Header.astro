@@ -33,9 +33,9 @@ import { SITE_TITLE } from "../consts";
   header {
     position: fixed;
 
-    right: env(safe-area-inset-right);
-    left: env(safe-area-inset-left);
-    bottom: env(safe-area-inset-bottom);
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 
   h2 {
@@ -47,7 +47,7 @@ import { SITE_TITLE } from "../consts";
   }
 
   nav {
-    margin: 1.5rem;
+    padding: 1.5rem;
 
     display: flex;
     flex-flow: row nowrap;
@@ -101,13 +101,7 @@ import { SITE_TITLE } from "../consts";
   /* Desktop Styles */
   @media screen and (min-width: 769px) {
     header {
-      width: 100%;
-
       position: unset;
-
-      padding-right: env(safe-area-inset-right);
-      padding-left: env(safe-area-inset-left);
-      padding-top: env(safe-area-inset-top);
     }
 
     .mobile-only {

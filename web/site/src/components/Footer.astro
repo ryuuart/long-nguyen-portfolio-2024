@@ -4,31 +4,34 @@ import { FOOTER_LIST_LINKS, FOOTER_LIST_SOCIALS } from "../consts";
 const today = new Date();
 ---
 
-<footer>
-  <section class="links">
-    <FooterList
-      title={FOOTER_LIST_LINKS.title}
-      links={FOOTER_LIST_LINKS.links}
-    />
-    <FooterList
-      title={FOOTER_LIST_SOCIALS.title}
-      links={FOOTER_LIST_SOCIALS.links}
-    />
-  </section>
-  <small>&copy; {today.getFullYear()} Long Nguyen. All rights reserved.</small>
+<footer class="section">
+  <div class="wrapper">
+    <section class="links">
+      <FooterList
+        title={FOOTER_LIST_LINKS.title}
+        links={FOOTER_LIST_LINKS.links}
+      />
+      <FooterList
+        title={FOOTER_LIST_SOCIALS.title}
+        links={FOOTER_LIST_SOCIALS.links}
+      />
+    </section>
+    <small>&copy; {today.getFullYear()} Long Nguyen. All rights reserved.</small
+    >
+  </div>
 </footer>
 
 <style>
   footer {
-    flex-grow: 0;
     flex-shrink: 0;
-
-    margin-left: calc(env(safe-area-inset-left) + 1.5rem);
-    margin-right: calc(env(safe-area-inset-right) + 1.5rem);
-    margin-bottom: calc(env(safe-area-inset-bottom) + 5rem);
   }
 
   small {
     font-size: 1rem;
+  }
+
+  .wrapper {
+    margin: 0 1.5rem;
+    margin-bottom: calc(5rem);
   }
 </style>
