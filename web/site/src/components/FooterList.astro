@@ -1,0 +1,51 @@
+---
+interface Props {
+  title: string;
+  links: {
+    displayText: string;
+    url: string;
+  }[];
+}
+
+const { title, links } = Astro.props;
+---
+
+<Fragment>
+  <h2>{title} ↘</h2>
+  <ul>
+    {
+      links.map((link) => {
+        return (
+          <li>
+            <a href={link.url}>{link.displayText}</a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Fragment>
+
+<style>
+  h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+
+    font-size: 3rem;
+
+    margin: 0.5rem auto;
+  }
+</style>
