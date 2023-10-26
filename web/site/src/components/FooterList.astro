@@ -31,13 +31,13 @@ const { title, links } = Astro.props;
     font-size: 1rem;
     text-transform: uppercase;
 
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-sm);
   }
 
   ul {
     margin: 0;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
     padding: 0;
   }
 
@@ -46,6 +46,6 @@ const { title, links } = Astro.props;
 
     font-size: 3rem;
 
-    margin: 0.5rem auto;
+    margin: var(--spacing-sm) auto;
   }
 </style>

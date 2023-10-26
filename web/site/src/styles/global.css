@@ -27,6 +27,18 @@
   font-display: swap;
 }
 
+:root {
+  --color-bg-main: #fffbfc;
+  --color-fg-main: #2d1724;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+}
+
 body {
   position: relative;
 
@@ -42,6 +54,9 @@ body {
   font:
     normal normal 1.5rem "PP Neue Montreal",
     sans-serif;
+
+  color: var(--color-fg-main);
+  background: var(--color-bg-main);
 }
 
 main {
