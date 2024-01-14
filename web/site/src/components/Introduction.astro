@@ -40,6 +40,21 @@ const { links } = Astro.props;
   }
 
   .wrapper {
+    max-width: 512px;
+
     margin: var(--spacing-xxl) var(--spacing-md);
+  }
+
+  @media screen and (min-width: 768px) {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
+    }
+
+    .wrapper {
+      margin-top: 8rem;
+      margin-bottom: 10rem;
+    }
   }
 </style>
