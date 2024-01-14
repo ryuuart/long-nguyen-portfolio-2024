@@ -1,27 +1,60 @@
 <section class="section">
   <div class="wrapper">
-    <p class="text-lg">
+    <p id="statement-highlight" class="text-lg">
       Design and code deserve an artisan’s love and care. I intersect art,
       design, and software to make bespoke and craft experiences that delight.
     </p>
-    <p>
-      Design is a medium to empower people and ideas. Code brings life to
-      design, so I always design with software intention. I love seeing both
-      serve and amuse people.
-    </p>
-    <div><a>About Me ↘</a></div>
+    <div>
+      <p id="statement-sub">
+        Design is a medium to empower people and ideas. Code brings life to
+        design, so I always design with software intention. I love seeing both
+        serve and amuse people.
+      </p>
+      <div><a>About Me ↘</a></div>
+    </div>
   </div>
 </section>
 
 <style>
+  section {
+    margin: 4.5rem auto;
+  }
+
   .text-lg {
     font-size: 2.5rem;
   }
+
   .wrapper {
     margin: var(--spacing-sm) var(--spacing-md);
   }
 
   a {
     text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      margin-top: 8.5rem;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: var(--spacing-xxl);
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    #statement-highlight {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #statement-sub {
+      grid-area: 1 / 2 / 2 / 3;
+      margin-bottom: var(--spacing-xxl);
+    }
   }
 </style>
