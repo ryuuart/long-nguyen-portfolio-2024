@@ -9,18 +9,37 @@ interface Props {
 const { links } = Astro.props;
 ---
 
-<p>
-  <slot />
-</p>
+<div class="section">
+  <div class="wrapper">
+    <p>
+      <slot />
+    </p>
+    <ul>
+      {
+        links.map((link) => {
+          return (
+            <li>
+              <a href={link.url}>{link.displayText}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</div>
 
-<ul>
-  {
-    links.map((link) => {
-      return (
-        <li>
-          <a href={link.url}>{link.displayText}</a>
-        </li>
-      );
-    })
+<style>
+  ul {
+    padding: 0;
+
+    list-style: none;
   }
-</ul>
+
+  p {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .wrapper {
+    margin: var(--spacing-xxl) var(--spacing-md);
+  }
+</style>
