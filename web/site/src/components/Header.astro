@@ -4,27 +4,36 @@ import { SITE_TITLE } from "../consts";
 
 <header class="section">
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="links-container">
+    <div class="mobile-only container-menu-mobile">
       <ul class="links-list">
-        <li class="desktop-only"><a href="">Art</a></li>
-        <li class="desktop-only"><a href="">Blog</a></li>
-        <li class="desktop-only"><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Artwork</a></li>
       </ul>
-      <button class="menu mobile-only">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          fill="none"
-        >
-          <rect x="4" y="8" width="24" height="2" fill="black"></rect>
-          <rect x="4" y="22" width="24" height="2" fill="black"></rect>
-          <rect x="4" y="15" width="24" height="2" fill="black"></rect>
-        </svg>
-      </button>
+    </div>
+    <div class="container-actions">
+      <h2><a href="/">{SITE_TITLE}</a></h2>
+      <div class="links-container">
+        <ul class="links-list">
+          <li class="desktop-only"><a href="">Portfolio</a></li>
+          <li class="desktop-only"><a href="">Blog</a></li>
+          <li class="desktop-only"><a href="">Artwork</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <button class="menu mobile-only">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <rect x="4" y="8" width="24" height="2" fill="black"></rect>
+            <rect x="4" y="22" width="24" height="2" fill="black"></rect>
+            <rect x="4" y="15" width="24" height="2" fill="black"></rect>
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 </header>
@@ -50,6 +59,10 @@ import { SITE_TITLE } from "../consts";
   }
 
   nav {
+    position: relative;
+  }
+
+  .container-actions {
     padding: var(--spacing-md);
 
     display: flex;
@@ -75,8 +88,38 @@ import { SITE_TITLE } from "../consts";
 
   .links-list {
     display: flex;
-    flex-flow: row nowrap;
     align-items: flex-end;
+  }
+
+  .container-actions .links-list {
+    flex-flow: row nowrap;
+  }
+
+  .container-menu-mobile .links-list {
+    flex-flow: column nowrap;
+  }
+
+  .container-menu-mobile .links-list {
+    font-size: 3rem;
+  }
+
+  .container-menu-mobile {
+    padding: var(--spacing-md);
+
+    position: absolute;
+    inset: 0;
+    top: auto;
+    bottom: 100%;
+
+    text-align: right;
+
+    /* display: none; */
+
+    background: var(--color-bg-main);
+  }
+
+  .container-menu-mobile.active {
+    display: initial;
   }
 
   .menu {
