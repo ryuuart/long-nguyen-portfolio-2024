@@ -4,7 +4,7 @@ import { SITE_TITLE } from "../consts";
 
 <header class="section">
   <nav>
-    <div class="mobile-only container-menu-mobile">
+    <div id="mobile-links-menu" class="mobile-only container-menu-mobile">
       <ul class="links-list">
         <li><a href="">Portfolio</a></li>
         <li><a href="">Blog</a></li>
@@ -20,7 +20,7 @@ import { SITE_TITLE } from "../consts";
           <li class="desktop-only"><a href="">Artwork</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-        <button class="menu mobile-only">
+        <button id="mobile-button-links-menu" class="menu mobile-only">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -37,6 +37,20 @@ import { SITE_TITLE } from "../consts";
     </div>
   </nav>
 </header>
+
+<script>
+  window.addEventListener("load", () => {
+    const mobileLinksMenu = document.getElementById("mobile-links-menu");
+    const mobileButtonLinksMenu = document.getElementById(
+      "mobile-button-links-menu",
+    );
+
+    mobileButtonLinksMenu?.addEventListener("click", () => {
+      mobileLinksMenu?.classList.toggle("active");
+      document.body.classList.toggle("no-scroll");
+    });
+  });
+</script>
 
 <style>
   header {
@@ -113,7 +127,7 @@ import { SITE_TITLE } from "../consts";
 
     text-align: right;
 
-    /* display: none; */
+    display: none;
 
     background: var(--color-bg-main);
   }
@@ -127,6 +141,10 @@ import { SITE_TITLE } from "../consts";
     top: var(--spacing-sm);
 
     margin-left: var(--spacing-sm);
+  }
+
+  body.no-scroll {
+    overflow: hidden;
   }
 
   /* Extremely Small Mobile Devices*/
