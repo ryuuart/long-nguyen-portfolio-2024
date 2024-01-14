@@ -2,7 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, INTRODUCTION } from "../consts";
+import Introduction from "../components/Introduction.astro";
 ---
 
 <html lang="en">
@@ -11,7 +12,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header />
-    <main></main>
+    <main>
+      <Introduction links={INTRODUCTION.links}>
+        {INTRODUCTION.greeting}
+        <br />
+        {INTRODUCTION.description}
+      </Introduction>
+    </main>
     <Footer />
   </body>
 </html>
