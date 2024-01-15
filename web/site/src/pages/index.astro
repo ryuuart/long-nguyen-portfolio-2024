@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, INTRODUCTION } from "../consts";
 import Introduction from "../components/Introduction.astro";
 import Statement from "../components/Statement.astro";
+import WorkCard from "../components/WorkCard.astro";
 ---
 
 <html lang="en">
@@ -19,6 +20,7 @@ import Statement from "../components/Statement.astro";
         <br />
         {INTRODUCTION.description}
       </Introduction>
+      <WorkCard />
       <Statement />
     </main>
     <Footer />
