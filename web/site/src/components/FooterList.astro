@@ -10,7 +10,7 @@ interface Props {
 const { title, links } = Astro.props;
 ---
 
-<Fragment>
+<div>
   <h2>{title} ↘</h2>
   <ul>
     {
@@ -23,7 +23,7 @@ const { title, links } = Astro.props;
       })
     }
   </ul>
-</Fragment>
+</div>
 
 <style>
   h2 {
@@ -47,5 +47,11 @@ const { title, links } = Astro.props;
     font-size: 3rem;
 
     margin: var(--spacing-sm) auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    li {
+      font-size: unset;
+    }
   }
 </style>
