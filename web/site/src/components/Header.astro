@@ -22,6 +22,7 @@ import { SITE_TITLE } from "../consts";
         </ul>
         <button id="mobile-button-links-menu" class="menu mobile-only">
           <svg
+            class="open"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
@@ -31,6 +32,29 @@ import { SITE_TITLE } from "../consts";
             <rect x="4" y="8" width="24" height="2" fill="black"></rect>
             <rect x="4" y="22" width="24" height="2" fill="black"></rect>
             <rect x="4" y="15" width="24" height="2" fill="black"></rect>
+          </svg>
+          <svg
+            class="close removed"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <rect
+              x="7"
+              y="24"
+              width="26"
+              height="2"
+              transform="rotate(-45 7 24)"
+              fill="#2D1724"></rect>
+            <rect
+              x="8.41422"
+              y="6"
+              width="26"
+              height="2"
+              transform="rotate(45 8.41422 6)"
+              fill="#2D1724"></rect>
           </svg>
         </button>
       </div>
@@ -48,6 +72,13 @@ import { SITE_TITLE } from "../consts";
     mobileButtonLinksMenu?.addEventListener("click", () => {
       mobileLinksMenu?.classList.toggle("active");
       document.body.classList.toggle("no-scroll");
+
+      mobileButtonLinksMenu
+        ?.querySelector(".close")
+        ?.classList.toggle("removed");
+      mobileButtonLinksMenu
+        ?.querySelector(".open")
+        ?.classList.toggle("removed");
     });
   });
 </script>
@@ -145,6 +176,10 @@ import { SITE_TITLE } from "../consts";
 
   body.no-scroll {
     overflow: hidden;
+  }
+
+  .removed {
+    display: none;
   }
 
   /* Extremely Small Mobile Devices*/
