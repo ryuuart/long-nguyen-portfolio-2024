@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, INTRODUCTION } from "../consts";
 import Introduction from "../components/Introduction.astro";
 import Statement from "../components/Statement.astro";
-import WorkCard from "../components/WorkCard.astro";
+import WorkPreview from "../components/WorkPreview.astro";
 ---
 
 <html lang="en">
@@ -20,16 +20,7 @@ import WorkCard from "../components/WorkCard.astro";
         <br />
         {INTRODUCTION.description}
       </Introduction>
-      <WorkCard
-        title="MANAWEAVE"
-        role="Designer / Engineer"
-        description="An open-source controllable, configurable, omnidirectional marquee, and design experiment."
-      />
-      <WorkCard
-        title="MOBI"
-        role="President / Designer"
-        description="University Club"
-      />
+      <WorkPreview />
       <Statement />
     </main>
     <Footer />
