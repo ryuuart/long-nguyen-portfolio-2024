@@ -1,0 +1,22 @@
+---
+import WorkCard from "../components/WorkCard.astro";
+---
+
+<div class="container">
+  <WorkCard
+    title="MANAWEAVE"
+    role="Designer / Engineer"
+    description="An open-source controllable, configurable, omnidirectional marquee, and design experiment."
+  />
+  <WorkCard
+    title="MOBI"
+    role="President / Designer"
+    description="University Club"
+  />
+</div>
+
+<style>
+  .container > :global(*) {
+    margin-bottom: var(--spacing-md);
+  }
+</style>

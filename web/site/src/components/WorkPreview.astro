@@ -1,0 +1,28 @@
+---
+import WorkGrid from "./WorkGrid.astro";
+---
+
+<div class="wrapper">
+  <h2>Selected <br /> Works ↘</h2>
+  <WorkGrid />
+  <div class="link-cta"><a href="">All Works ↘</a></div>
+</div>
+
+<style>
+  h2 {
+    font-weight: 400;
+    font-size: 1rem;
+
+    text-transform: uppercase;
+
+    margin: var(--spacing-md) auto;
+  }
+
+  .wrapper {
+    margin: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .link-cta {
+    margin: var(--spacing-md) auto;
+  }
+</style>
