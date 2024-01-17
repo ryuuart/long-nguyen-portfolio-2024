@@ -19,4 +19,12 @@ import WorkCard from "../components/WorkCard.astro";
   .container > :global(*) {
     margin-bottom: var(--spacing-md);
   }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: var(--spacing-xl);
+    }
+  }
 </style>
