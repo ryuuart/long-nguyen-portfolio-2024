@@ -48,9 +48,6 @@ body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 
-  display: flex;
-  flex-flow: column nowrap;
-
   font:
     normal normal 1.5rem "PP Neue Montreal",
     sans-serif;
