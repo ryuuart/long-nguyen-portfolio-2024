@@ -77,3 +77,12 @@ a:visited {
   width: 100%;
   max-width: 66ch;
 }
+
+/* Font scaling on Safari is weird
+https://stackoverflow.com/questions/3226001/some-font-sizes-rendered-larger-on-safari-iphone
+*/
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+}
