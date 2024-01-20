@@ -9,7 +9,7 @@ const { title, role, description } = Astro.props;
 ---
 
 <div class="container">
-  <h3>{title} • {role}</h3>
+  <h3>{title} • <br /> <span class="fade">{role}</span></h3>
   <div class="placeholder">
     <!-- <img /> -->
   </div>
@@ -49,6 +49,10 @@ const { title, role, description } = Astro.props;
   .placeholder {
     background: #272727;
     aspect-ratio: 3 / 2;
+  }
+
+  .fade {
+    opacity: 50%;
   }
 
   @media screen and (min-width: 768px) {
