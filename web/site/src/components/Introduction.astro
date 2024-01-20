@@ -9,8 +9,8 @@ interface Props {
 const { links } = Astro.props;
 ---
 
-<div class="section">
-  <div class="wrapper">
+<div class="block">
+  <div class="container">
     <p>
       <slot />
     </p>
@@ -39,7 +39,7 @@ const { links } = Astro.props;
     margin-bottom: var(--spacing-md);
   }
 
-  .wrapper {
+  .container {
     max-width: 512px;
 
     margin-top: var(--spacing-xxl);
