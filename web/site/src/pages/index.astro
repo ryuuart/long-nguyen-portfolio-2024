@@ -1,38 +1,17 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, INTRODUCTION } from "../consts";
+import { INTRODUCTION } from "../consts";
 import Introduction from "../components/Introduction.astro";
 import Statement from "../components/Statement.astro";
 import WorkPreview from "../components/WorkPreview.astro";
-import PageLayout from "../components/PageLayout.astro";
-import Copyright from "../components/Copyright.astro";
+import Page from "../layouts/Page.astro";
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <PageLayout
-      vertical
-      horizontal={false}
-      class="flex flex-columns flex-nowrap"
-    >
-      <Header />
-      <PageLayout>
-        <main>
-          <Introduction links={INTRODUCTION.links}>
-            {INTRODUCTION.greeting}
-            <br />
-            {INTRODUCTION.description}
-          </Introduction>
-          <WorkPreview />
-          <Statement />
-        </main>
-        <Footer />
-      </PageLayout>
-    </PageLayout>
-  </body>
-</html>
+<Page>
+  <Introduction links={INTRODUCTION.links}>
+    {INTRODUCTION.greeting}
+    <br />
+    {INTRODUCTION.description}
+  </Introduction>
+  <WorkPreview />
+  <Statement />
+</Page>
