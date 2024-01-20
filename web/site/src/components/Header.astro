@@ -1,65 +1,70 @@
 ---
 import { SITE_TITLE } from "../consts";
+import PageLayout from "./PageLayout.astro";
 ---
 
-<header class="block">
-  <nav>
-    <div id="mobile-links-menu" class="mobile-only container-menu-mobile">
-      <ul class="links-list">
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Artwork</a></li>
-      </ul>
+<header>
+  <PageLayout type="padding">
+    <div class="block">
+      <nav>
+        <div id="mobile-links-menu" class="mobile-only container-menu-mobile">
+          <ul class="links-list">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Artwork</a></li>
+          </ul>
+        </div>
+        <div class="container-actions">
+          <h2><a href="/">{SITE_TITLE}</a></h2>
+          <div class="links-container">
+            <ul class="links-list">
+              <li class="desktop-only"><a href="">Portfolio</a></li>
+              <li class="desktop-only"><a href="">Blog</a></li>
+              <li class="desktop-only"><a href="">Artwork</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <button id="mobile-button-links-menu" class="menu mobile-only">
+              <svg
+                class="open"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <rect x="4" y="8" width="24" height="2" fill="black"></rect>
+                <rect x="4" y="22" width="24" height="2" fill="black"></rect>
+                <rect x="4" y="15" width="24" height="2" fill="black"></rect>
+              </svg>
+              <svg
+                class="close removed"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <rect
+                  x="7"
+                  y="24"
+                  width="26"
+                  height="2"
+                  transform="rotate(-45 7 24)"
+                  fill="#2D1724"></rect>
+                <rect
+                  x="8.41422"
+                  y="6"
+                  width="26"
+                  height="2"
+                  transform="rotate(45 8.41422 6)"
+                  fill="#2D1724"></rect>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
     </div>
-    <div class="container-actions">
-      <h2><a href="/">{SITE_TITLE}</a></h2>
-      <div class="links-container">
-        <ul class="links-list">
-          <li class="desktop-only"><a href="">Portfolio</a></li>
-          <li class="desktop-only"><a href="">Blog</a></li>
-          <li class="desktop-only"><a href="">Artwork</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <button id="mobile-button-links-menu" class="menu mobile-only">
-          <svg
-            class="open"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-          >
-            <rect x="4" y="8" width="24" height="2" fill="black"></rect>
-            <rect x="4" y="22" width="24" height="2" fill="black"></rect>
-            <rect x="4" y="15" width="24" height="2" fill="black"></rect>
-          </svg>
-          <svg
-            class="close removed"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-          >
-            <rect
-              x="7"
-              y="24"
-              width="26"
-              height="2"
-              transform="rotate(-45 7 24)"
-              fill="#2D1724"></rect>
-            <rect
-              x="8.41422"
-              y="6"
-              width="26"
-              height="2"
-              transform="rotate(45 8.41422 6)"
-              fill="#2D1724"></rect>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
+  </PageLayout>
 </header>
 
 <script>

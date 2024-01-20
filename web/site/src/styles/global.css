@@ -39,6 +39,10 @@
   --spacing-xxl: 4rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
 
@@ -76,6 +80,18 @@ a:visited {
 
   width: 100%;
   max-width: 66ch;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-columns {
+  flex-direction: column;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 /* Font scaling on Safari is weird

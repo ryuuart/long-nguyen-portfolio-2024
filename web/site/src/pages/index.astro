@@ -14,18 +14,24 @@ import PageLayout from "../components/PageLayout.astro";
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <PageLayout>
+    <PageLayout
+      vertical
+      horizontal={false}
+      class="flex flex-columns flex-nowrap"
+    >
       <Header />
-      <main>
-        <Introduction links={INTRODUCTION.links}>
-          {INTRODUCTION.greeting}
-          <br />
-          {INTRODUCTION.description}
-        </Introduction>
-        <WorkPreview />
-        <Statement />
-      </main>
-      <Footer />
+      <PageLayout>
+        <main>
+          <Introduction links={INTRODUCTION.links}>
+            {INTRODUCTION.greeting}
+            <br />
+            {INTRODUCTION.description}
+          </Introduction>
+          <WorkPreview />
+          <Statement />
+        </main>
+        <Footer />
+      </PageLayout>
     </PageLayout>
   </body>
 </html>

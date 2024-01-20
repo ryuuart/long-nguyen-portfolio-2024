@@ -1,4 +1,25 @@
-<div class="container">
+---
+interface Props {
+  type?: "padding" | "margin";
+  vertical?: boolean;
+  horizontal?: boolean;
+  class?: string;
+}
+
+const {
+  type = "margin",
+  vertical = false,
+  horizontal = true,
+  class: className,
+  ...rest
+} = Astro.props;
+const directionality = [];
+
+if (vertical) directionality.push("vertical");
+if (horizontal) directionality.push("horizontal");
+---
+
+<div class:list={["container", type, ...directionality, className]} {...rest}>
   <slot />
 </div>
 
@@ -6,15 +27,34 @@
   .container {
     position: relative;
 
-    display: flex;
-    flex-flow: column nowrap;
+    --spacing-vertical: 0;
+    --spacing-horizontal: 0;
+    --configuration: var(--spacing-vertical) var(--spacing-horizontal);
+  }
 
-    padding: var(--spacing-sm) var(--spacing-md);
+  .vertical {
+    --spacing-vertical: var(--spacing-sm);
+  }
+
+  .horizontal {
+    --spacing-horizontal: var(--spacing-md);
+  }
+
+  .padding {
+    padding: var(--configuration);
+  }
+
+  .margin {
+    margin: var(--configuration);
   }
 
   @media screen and (min-width: 768px) {
-    .container {
-      padding: var(--spacing-lg) 6rem;
+    .vertical {
+      --spacing-vertical: var(--spacing-lg);
+    }
+
+    .horizontal {
+      --spacing-horizontal: 6rem;
     }
   }
 </style>
