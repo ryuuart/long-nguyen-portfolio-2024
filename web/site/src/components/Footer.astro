@@ -1,7 +1,6 @@
 ---
 import FooterList from "./FooterList.astro";
 import { FOOTER_LIST_LINKS, FOOTER_LIST_SOCIALS } from "../consts";
-const today = new Date();
 ---
 
 <footer class="block">
@@ -16,21 +15,12 @@ const today = new Date();
         links={FOOTER_LIST_SOCIALS.links}
       />
     </section>
-    <small>
-      &copy; {today.getFullYear()} Long Nguyen. All rights reserved.
-    </small>
   </div>
 </footer>
 
 <style>
   footer {
     flex-shrink: 0;
-  }
-
-  small {
-    opacity: 0.5;
-
-    font-size: 1rem;
   }
 
   @media screen and (min-width: 768px) {

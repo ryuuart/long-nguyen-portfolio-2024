@@ -7,6 +7,7 @@ import Introduction from "../components/Introduction.astro";
 import Statement from "../components/Statement.astro";
 import WorkPreview from "../components/WorkPreview.astro";
 import PageLayout from "../components/PageLayout.astro";
+import Copyright from "../components/Copyright.astro";
 ---
 
 <html lang="en">
@@ -31,6 +32,11 @@ import PageLayout from "../components/PageLayout.astro";
           <Statement />
         </main>
         <Footer />
+      </PageLayout>
+      <PageLayout>
+        <div class="block">
+          <Copyright />
+        </div>
       </PageLayout>
     </PageLayout>
   </body>
