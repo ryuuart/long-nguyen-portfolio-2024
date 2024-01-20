@@ -3,10 +3,11 @@ import { INTRODUCTION } from "../consts";
 import Introduction from "../components/Introduction.astro";
 import Statement from "../components/Statement.astro";
 import WorkPreview from "../components/WorkPreview.astro";
-import Page from "../layouts/Page.astro";
+import Layout from "../layouts/Page.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<Page>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <Introduction links={INTRODUCTION.links}>
     {INTRODUCTION.greeting}
     <br />
@@ -14,4 +15,4 @@ import Page from "../layouts/Page.astro";
   </Introduction>
   <WorkPreview />
   <Statement />
-</Page>
+</Layout>
