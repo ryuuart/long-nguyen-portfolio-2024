@@ -23,8 +23,8 @@ const { title, description } = Astro.props;
       class="flex flex-columns flex-nowrap"
     >
       <Header />
-      <PageLayout>
-        <main>
+      <PageLayout class="flex flex-columns flex-grow">
+        <main class="flex-grow">
           <slot />
         </main>
         <Footer />

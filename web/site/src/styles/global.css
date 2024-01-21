@@ -52,6 +52,9 @@ body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 
+  display: flex;
+  flex-flow: column nowrap;
+
   font:
     normal normal 1.5rem "PP Neue Montreal",
     sans-serif;
@@ -60,7 +63,7 @@ body {
   background: var(--color-bg-main);
 }
 
-main {
+body > * {
   flex: 1 0 auto;
 }
 
@@ -105,6 +108,10 @@ a:visited {
 
 .flex {
   display: flex;
+}
+
+.flex-grow {
+  flex: 1 0 auto;
 }
 
 .flex-columns {
