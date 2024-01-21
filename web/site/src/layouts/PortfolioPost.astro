@@ -56,22 +56,20 @@ const metaDateString = startDateString + " – " + endDateString;
 
 <Layout title={pageTitle} description={description}>
   <article>
-    <div class="block">
-      <header>
-        <div class="meta">
-          <Heading level={1}>{meta.title}</Heading>
-          <p>{meta.role}</p>
-          <p class="date">{metaDateString}</p>
-          <div><a href={meta.link.url}>{meta.link.title}</a></div>
-        </div>
-        <div class="pic">
-          <div class="placeholder"></div>
-        </div>
-      </header>
-      <section>
-        <slot />
-      </section>
-    </div>
+    <header>
+      <div class="meta">
+        <Heading level={1}>{meta.title}</Heading>
+        <p>{meta.role}</p>
+        <p class="date">{metaDateString}</p>
+        <div><a href={meta.link.url}>{meta.link.title}</a></div>
+      </div>
+      <div class="pic">
+        <div class="placeholder"></div>
+      </div>
+    </header>
+    <section>
+      <slot />
+    </section>
   </article>
 </Layout>
 
