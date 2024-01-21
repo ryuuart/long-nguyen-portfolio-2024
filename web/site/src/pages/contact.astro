@@ -1,0 +1,46 @@
+---
+import { EXTERNAL_LINKS } from "../consts";
+import Page from "../layouts/Page.astro";
+---
+
+<Page title="Contacts" description="">
+  <div class="container">
+    <h1>You can find me at</h1>
+    <ul>
+      {
+        Object.entries(EXTERNAL_LINKS).map(([key, value]) => {
+          return (
+            <li>
+              <a href={value.url}>{value.displayText}</a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</Page>
+
+<style>
+  h1 {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  ul > li {
+    list-style: none;
+  }
+
+  .container {
+    margin-top: var(--spacing-xxl);
+    margin-bottom: 6rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      margin-top: 10rem;
+    }
+  }
+</style>
