@@ -33,15 +33,15 @@ export const FOOTER_LIST_LINKS = {
   links: [
     {
       displayText: "Portfolio",
-      url: "",
+      url: "/portfolio",
     },
     {
       displayText: "Artwork",
-      url: "",
+      url: "/art",
     },
     {
       displayText: "Blog",
-      url: "",
+      url: "/blog",
     },
   ],
 };
@@ -51,15 +51,11 @@ export const FOOTER_LIST_SOCIALS = {
   links: [
     {
       displayText: "Github",
-      url: "",
+      url: "https://github.com/ryuuart",
     },
     {
       displayText: "LinkedIn",
-      url: "",
-    },
-    {
-      displayText: "Instagram",
-      url: "",
+      url: "https://www.linkedin.com/in/18nguyenl/",
     },
   ],
 };
