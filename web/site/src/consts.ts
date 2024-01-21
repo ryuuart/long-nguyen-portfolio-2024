@@ -17,6 +17,10 @@ export const EXTERNAL_LINKS = {
     displayText: "LinkedIn",
     url: "https://www.linkedin.com/in/18nguyenl/",
   },
+  devpost: {
+    displayText: "Devpost",
+    url: "https://devpost.com/18nguyenl",
+  },
 };
 
 export const INTRODUCTION = {
