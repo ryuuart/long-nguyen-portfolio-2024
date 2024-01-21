@@ -15,16 +15,16 @@ export const INTRODUCTION = {
     },
     {
       displayText: "me@long-nguyen.dev",
-      url: "",
+      url: "mailto:me@long-nguyen.dev",
     },
-    {
-      displayText: "Blog",
-      url: "",
-    },
-    {
-      displayText: "Art",
-      url: "",
-    },
+    // {
+    //   displayText: "Blog",
+    //   url: "",
+    // },
+    // {
+    //   displayText: "Art",
+    //   url: "",
+    // },
   ],
 };
 
