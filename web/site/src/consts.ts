@@ -4,6 +4,21 @@
 export const SITE_TITLE = "Long Nguyen";
 export const SITE_DESCRIPTION = "Welcome to my website!";
 
+export const EXTERNAL_LINKS = {
+  email: {
+    displayText: "me@long-nguyen.dev",
+    url: "mailto:me@long-nguyen.dev",
+  },
+  github: {
+    displayText: "Github",
+    url: "https://github.com/ryuuart",
+  },
+  linkedin: {
+    displayText: "LinkedIn",
+    url: "https://www.linkedin.com/in/18nguyenl/",
+  },
+};
+
 export const INTRODUCTION = {
   greeting: "Hello!",
   description:
@@ -13,10 +28,7 @@ export const INTRODUCTION = {
       displayText: "Resume",
       url: "",
     },
-    {
-      displayText: "me@long-nguyen.dev",
-      url: "mailto:me@long-nguyen.dev",
-    },
+    EXTERNAL_LINKS.email,
     // {
     //   displayText: "Blog",
     //   url: "",
@@ -52,14 +64,5 @@ export const FOOTER_LIST_LINKS = {
 
 export const FOOTER_LIST_SOCIALS = {
   title: "Socials",
-  links: [
-    {
-      displayText: "Github",
-      url: "https://github.com/ryuuart",
-    },
-    {
-      displayText: "LinkedIn",
-      url: "https://www.linkedin.com/in/18nguyenl/",
-    },
-  ],
+  links: [EXTERNAL_LINKS.github, EXTERNAL_LINKS.linkedin],
 };
