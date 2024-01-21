@@ -31,17 +31,21 @@ export const INTRODUCTION = {
 export const FOOTER_LIST_LINKS = {
   title: "Links",
   links: [
+    // {
+    //   displayText: "Portfolio",
+    //   url: "/portfolio",
+    // },
+    // {
+    //   displayText: "Artwork",
+    //   url: "/art",
+    // },
+    // {
+    //   displayText: "Blog",
+    //   url: "/blog",
+    // },
     {
-      displayText: "Portfolio",
-      url: "/portfolio",
-    },
-    {
-      displayText: "Artwork",
-      url: "/art",
-    },
-    {
-      displayText: "Blog",
-      url: "/blog",
+      displayText: "About Me",
+      url: "/about",
     },
   ],
 };
