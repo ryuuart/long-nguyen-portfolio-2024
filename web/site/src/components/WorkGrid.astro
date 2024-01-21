@@ -4,20 +4,34 @@ import WorkCard from "../components/WorkCard.astro";
 
 <div class="container">
   <WorkCard
-    title="MANAWEAVE"
+    title="MANAWAVE"
     role="Designer / Engineer"
     description="An open-source controllable, configurable, omnidirectional marquee, and design experiment."
+    url="/portfolio/manawave"
   />
   <WorkCard
     title="MOBI"
     role="President / Designer"
-    description="University Club"
+    description="Student organization dedicated to campus software engineering mentorship, empowerment, and fun."
+    url="/portfolio/mobi"
+  />
+  <WorkCard
+    title="Gozova"
+    role="Software Engineering Intern"
+    description="Startup simplifying moving, delivery, and storage logistics across the US."
+    url="/portfolio/gozova"
+  />
+  <WorkCard
+    title="Zeal IT Consultants"
+    role="Software Engineering Intern"
+    description="Consultancy delivering customized software and solutions."
+    url="/portfolio/zealitconsultants"
   />
 </div>
 
 <style>
   .container > :global(*) {
-    margin-bottom: var(--spacing-md);
+    /* margin-bottom: var(--spacing-md); */
   }
 
   @media screen and (min-width: 768px) {

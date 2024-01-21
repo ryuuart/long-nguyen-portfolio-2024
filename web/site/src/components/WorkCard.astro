@@ -3,16 +3,19 @@ interface Props {
   title: string;
   role: string;
   description: string;
+  url: string;
 }
 
-const { title, role, description } = Astro.props;
+const { title, role, description, url } = Astro.props;
 ---
 
 <div class="container">
   <h3>{title} • <br /> <span class="fade">{role}</span></h3>
-  <div class="placeholder">
-    <!-- <img /> -->
-  </div>
+  <a href={url}>
+    <div class="placeholder">
+      <!-- <img /> -->
+    </div>
+  </a>
   <p>
     {description}
   </p>
