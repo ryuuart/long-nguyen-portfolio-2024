@@ -88,11 +88,12 @@ button {
 }
 
 a {
+  color: inherit;
   text-decoration: underline;
 }
 
 a:visited {
-  color: initial;
+  color: inherit;
 }
 
 .block {
