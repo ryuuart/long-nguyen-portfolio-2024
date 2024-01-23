@@ -4,24 +4,22 @@ import Layout from "./Page.astro";
 
 export type Metadata = {
   title: string;
+  description: string;
   role: string;
-  date: {
-    start: Date;
-    end: "present" | Date;
-  };
   link: {
-    title: string;
+    displayText: string;
     url: string;
   };
+  startDate: Date;
+  endDate: Date | "present";
+  heroImage: string;
 };
 
 interface Props {
-  title: string;
-  description: string;
   meta: Metadata;
 }
 
-const { title: pageTitle, description, meta } = Astro.props;
+const { meta } = Astro.props;
 
 function formatDate(date: Date): string {
   const formatter = Intl.DateTimeFormat("en-us", {
@@ -48,20 +46,20 @@ function formatDate(date: Date): string {
   return parts.month + " " + parts.year;
 }
 
-const startDateString = formatDate(meta.date.start);
+const startDateString = formatDate(meta.startDate);
 const endDateString =
-  meta.date.end === "present" ? "present" : formatDate(meta.date.end);
+  meta.endDate === "present" ? "present" : formatDate(meta.endDate);
 const metaDateString = startDateString + " – " + endDateString;
 ---
 
-<Layout title={pageTitle} description={description}>
+<Layout title={meta.title} description={meta.description}>
   <article>
     <header>
       <div class="meta">
         <Heading level={1}>{meta.title}</Heading>
         <p>{meta.role}</p>
         <p class="date">{metaDateString}</p>
-        <div><a href={meta.link.url}>{meta.link.title}</a></div>
+        <div><a href={meta.link.url}>{meta.link.displayText}</a></div>
       </div>
       <div class="pic">
         <div class="placeholder"></div>
