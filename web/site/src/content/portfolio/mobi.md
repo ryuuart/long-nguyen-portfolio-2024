@@ -20,7 +20,7 @@ This peaked in a summer-long, multi-club collaboration called Project Temple (Oc
 
 ## Challenges
 
-Mobi was a student organization at the brink of destruction after the pandemic. There were many pain points that plagued the organization before and after the pandemic. x
+Mobi was a student organization at the brink of destruction after the pandemic. There were many pain points that plagued the organization before and after the pandemic.
 
 One huge pain point was how I realized previous approaches were ineffective. Workshops were essentially secondary lectures that happened at the worst times: Fridays at 5:00 PM. Right when people were ready for the weekend and want to rest. Even before the pandemic, member participation would dwindle from 20-40 for the initial meetings to around 1-2 for the final.
 
