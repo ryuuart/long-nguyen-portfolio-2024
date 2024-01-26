@@ -10,7 +10,7 @@ link:
   url: "https://manawave.art"
 ---
 
-MANAWAVE is a project where I show to myself what I'm capable as a creative and engineer. I had always wanted to solve some front-end problems like testing animations, designing something I wished to see on the web, optimizing that experience, and deploying them to production.
+[MANAWAVE](https://manawave.art/) is a project where I show to myself what I'm capable as a creative and engineer. I had always wanted to solve some front-end problems like testing animations, designing something I wished to see on the web, optimizing that experience, and deploying them to production.
 
 ## Accomplishments
 

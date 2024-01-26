@@ -12,7 +12,7 @@ link:
 
 ## Brief
 
-My role at Zeal focused much on enhancing, designing, and developing websites. Two websites I worked on specifically are the Plano Kendo Dojo website and the North Dallas Developer User Group's website.
+My role at Zeal focused much on enhancing, designing, and developing websites. Two websites I worked on specifically are the [Plano Kendo Dojo website](https://www.planokendo.com/) and the [North Dallas Developer User Group's website](https://www.northdallas.net/).
 
 ## Accomplishments
 
