@@ -30,7 +30,7 @@ export const INTRODUCTION = {
   links: [
     {
       displayText: "Resume",
-      url: "",
+      url: "/long_nguyen_resume.pdf",
     },
     EXTERNAL_LINKS.email,
     // {
