@@ -61,9 +61,6 @@ const metaDateString = startDateString + " – " + endDateString;
         <p class="date">{metaDateString}</p>
         <div><a href={meta.link.url}>{meta.link.displayText}</a></div>
       </div>
-      <div class="pic">
-        <div class="placeholder"></div>
-      </div>
     </header>
     <section>
       <slot />
@@ -96,18 +93,6 @@ const metaDateString = startDateString + " – " + endDateString;
 
   .date {
     text-transform: capitalize;
-  }
-
-  .pic {
-    flex: 1 0;
-  }
-
-  .pic > .placeholder {
-    aspect-ratio: 3 / 2;
-
-    min-width: 128px;
-    width: 100%;
-    background: black;
   }
 
   section {
