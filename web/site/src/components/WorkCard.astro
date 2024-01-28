@@ -4,17 +4,16 @@ interface Props {
   role: string;
   description: string;
   url: string;
+  coverURL: string;
 }
 
-const { title, role, description, url } = Astro.props;
+const { title, role, description, url, coverURL } = Astro.props;
 ---
 
 <div class="container">
   <h3>{title} • <br /> <span class="fade">{role}</span></h3>
   <a href={url}>
-    <div class="placeholder">
-      <!-- <img /> -->
-    </div>
+    <img src={coverURL} />
   </a>
   <p>
     {description}
@@ -38,6 +37,15 @@ const { title, role, description, url } = Astro.props;
     margin: 0;
   }
 
+  img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+
+    width: 100%;
+
+    border: 1px solid var(--color-fg-main);
+  }
+
   .container {
     display: flex;
     flex-flow: column nowrap;
@@ -47,11 +55,6 @@ const { title, role, description, url } = Astro.props;
     margin: var(--spacing-sm) auto;
 
     width: 100%;
-  }
-
-  .placeholder {
-    background: #272727;
-    aspect-ratio: 3 / 2;
   }
 
   .fade {

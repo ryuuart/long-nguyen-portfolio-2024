@@ -2,7 +2,7 @@
 title: "Gozova"
 description: "Build two customized websites for clientele."
 role: "Front-end development"
-heroImage: ""
+heroImage: "/portfolio/gozova/cover.webp"
 startDate: 2021-06-01
 endDate: 2021-08-01
 link:

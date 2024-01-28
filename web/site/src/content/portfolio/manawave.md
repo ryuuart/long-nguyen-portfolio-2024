@@ -2,7 +2,7 @@
 title: "MANAWAVE"
 description: "An open-source controllable, configurable, omnidirectional marquee, and design experiment."
 role: "Designer / Engineer"
-heroImage: ""
+heroImage: "/portfolio/manawave/cover.webp"
 startDate: 2022-11-00
 endDate: present
 link:

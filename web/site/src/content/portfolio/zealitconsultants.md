@@ -2,7 +2,7 @@
 title: "Zeal"
 description: "Build two customized websites for clientele."
 role: "Web Development"
-heroImage: ""
+heroImage: "/portfolio/zealitconsultants/cover.webp"
 startDate: 2019-05-01
 endDate: 2020-01-01
 link:

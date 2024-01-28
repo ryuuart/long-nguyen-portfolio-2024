@@ -2,7 +2,7 @@
 title: "Mobi"
 description: "Lead student organization dedicated to campus software engineering mentorship, empowerment, and fun."
 role: "President / Designer"
-heroImage: ""
+heroImage: "/portfolio/mobi/cover.webp"
 startDate: 2021-01-01
 endDate: 2023-01-01
 link:
