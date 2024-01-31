@@ -46,7 +46,7 @@ To each case, I would experiment with something small and gather data to see how
 
 After this research step, I decided to rebrand Mobi part-by-part. I started by clarifying and making Mobi's mission clear. Members were often confused what they were supposed to do or be at Mobi.
 
-I decided to write a clear statement: At Mobi, you will be guaranteed to learn a new industry skill by the end of the meeting. I knew the paint points of listening to a lecture and seeing people walk out or fall asleep on it. It doesn't help that I could see members closing their laptops as we were coding along examples.
+I decided to write a clear statement: At Mobi, you will be guaranteed to learn a new industry skill by the end of the meeting. I knew the pain points of listening to a lecture and seeing people walk out or fall asleep on it. It doesn't help that I could see members closing their laptops as we were coding along examples.
 
 Taking this into account, I took my learnings from AIGA and introduced small, bite-sized Mobi Bytes Workshops that were 80% hands-on exercise over lecture. I would not stand at the podium the entire time and assist with members directly over the workshop. I would pad out time to help catch members up knowing new concepts were overwhelming.
 
