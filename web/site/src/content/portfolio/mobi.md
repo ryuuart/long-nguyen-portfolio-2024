@@ -58,9 +58,11 @@ I would apply the same approach to social coding where I would encourage officer
 
 This led to MOBI's network expanding greatly. To expand MOBI's network further, I continued to network with other clubs like AIGA, GDC, (Game Developer's Club), CSEC (Cybersecurity Club), and ACM (the Association for Computing Machinery) to learn from people outside my understanding. I learned a lot about their operating procedure, and they learnt from us. We eventually began sharing members and officers between each other, leading to university-wide collaborations.
 
-The most significant collaboration, Project Temple or Octapoints, evolved MOBI beyond initial goals. Project Temple is a 20-person summer collaboration between MOBI and CSEC to mentor members software engineering, cybersecurity, and professional skills. It involved working in a simulated agile team and environment, building a MOBIle app for university student organizations. The community and networking this provided was immense. Participants often became officers and friends leading initiatives across the university.
+The most significant collaboration, Project Temple or Octapoints, evolved MOBI beyond initial goals. Project Temple is a 20-person summer collaboration between MOBI and CSEC to mentor members software engineering, cybersecurity, and professional skills. It involved working in a simulated agile team and environment, building a mobile app for university student organizations. The community and networking this provided was immense. Participants often became officers and friends, leading initiatives across the university.
 
 I finalized and celebrated MOBI's rebirth and evolution by redesigning the club's brand, logo, and ephemera to leave a lasting, friendly legacy. MOBI will go from hexagon and lecture to coding, fun, and play.
+
+## Results
 
 Coming from near destruction, MOBI has become a prominent organization in the university computer science space. I combined all my learnings and led events with at least 30 to 70 members. I grew a superstar officer team. Not only did they lead in MOBI, they were officers in multiple organizations too. MOBI's new officers often led in huge university departmental events like the HackUTA 24-hour and 300+ person hackathon.
 
