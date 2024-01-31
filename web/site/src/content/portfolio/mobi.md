@@ -12,40 +12,56 @@ link:
 
 My role at Mobi focused on growing, restructuring, and rebranding the club. To do this, I lead a data and peoples-first approach to understand organizational friction. I collaborated with multiple university organizations besides my own to foster a sense of community for computer science on campus. Most importantly, I was determined to champion inclusitivity and openness to computer science. I lead Mobi with passion, because I loved seeing people take off and have fun with programming.
 
-## Accomplishments
+## Challenge
 
-I redesigned and developed multiple artifacts including flyers, posters, email, copy, t-shirt and website. I redeveloped the organization from the ground up. I restructured the way workshops and socials were run. I optimized each event to be more intentional with a hand on growth at each point. We grew our club from 4 members (which were officers only) Fall 2021 to over 100 members Spring 2022.
+After the pandemic, Mobi was left with approximately 4 members which were only officers. It was desginated as "frozen" by the university, which meant it would dissolve if it didn't keep more than 8 members registered. Mobi had additional challenges: documentation was sporadic, responsibilities were concentrated towards leadership (president and vice president), events didn't retain interest, officers would graduate with little replacement, and so much more. Mobi was existentially in danger.
 
-This peaked in a summer-long, multi-club collaboration called Project Temple (Octapoints) where I assisted leading 20 mentees to become security focused software engineers. I delivered biweekly workshops and I helped guide everyone in a simulated agile environment. Through this, the majority built a network of collaboration across 4 student organizations becoming officers at each. Most mentees have gotten an internship from the experience. Together, we revolutionized all of our clubs to work together, go to hackathons, form life-long friendships, and truly manifest a computer science community of fun and ambition.
+## Approach
 
-## Challenges
+I had learned so much from Mobi's culture. As a new president, I made the choice to take steps to revive Mobi. I had recently completed my internship at Gozova where I put UX first in my development processes. Specifically, UX at Gozova was about understanding underlying assumptions, seeing where data matched up with reality, and executing opportunities from observed pain points. I applied the exact same approach with heavy focus on empathy: understanding the members at Mobi.
 
-Mobi was a student organization at the brink of destruction after the pandemic. There were many pain points that plagued the organization before and after the pandemic.
+## Execution: Revival
 
-One huge pain point was how I realized previous approaches were ineffective. Workshops were essentially secondary lectures that happened at the worst times: Fridays at 5:00 PM. Right when people were ready for the weekend and want to rest. Even before the pandemic, member participation would dwindle from 20-40 for the initial meetings to around 1-2 for the final.
+Reviving Mobi involved a long-term multi-stage plan that was developed and executed on the fly as opportunities arose. I was working with several unknown variables, and optimized for every good chance to grow the club. In fact, that was the most important factor.
 
-Additionally, responsibilities gravitated towards the president which held organizational knowledge, but only for one person. When they graduated, the transition would not be clean and practiced for all officers. It also doesn't help that documentation was sporadic or non-existent.
+Mobi needed members so that it would have officers. After Mobi had officers, then it would be possible to scale the club appropriately.
 
-Lastly, the club was male-dominated with huge variation in skills. Most members were beginners, but we were giving workshops on skills way beyond the typical member skill range. The culture felt very cold and intimidating for everyone. Even if the workshop was intended for folks to learn, they were afraid to ask questions.
+Tackling growth involved restructuring all previous methods to be more clear and directed towards potential members. With the remaining officers, I aimed to create flows and journeys where members would _easily_ join Mobi and become participants. This involved creating fun incentives like hackathon stickers or making a website that quickly communicates Mobi's value proposition. While I was recruiting, I was also collecting data. It turned out previous and potential members struggled to be informed about events and Mobi itself. I set out to revamp Mobi's member onboarding flow with email and Discord. This lead to small growth of about 10-20 participating members initially.
 
-We didn't know who we were building for, and what our specific focus was.
+After I got a small base, I decided to offer opportunities to be officers immediately with low barrier and no election. Just having a team assembled was better than none. This lead to Mobi's network to be more spread and reach more members. Officers would invite and market the club to their classmates and friends in their freetime.
 
-## Resolution
+This ultimately lead Mobi to be unfrozen and stable. We were no longer in existential threat.
 
-I put UX, communications, and marketing at the forefront of Mobi's revival. What is Mobi? What does Mobi do?
+## Execution: Operations
 
-These were key questions that guided my choices for Mobi. I believed it to be a safe place for students to learn programming at any skill level. And more than that, I wanted Mobi to be fun. Coding is mathematical and logical by nature, but it's also very fun. I could see how much it scared people. I wanted to use my experience to give people the confidence to code and build their own apps with fun.
+Having officers is not enough if the organizational structure doesn't facilitate responsibilities and tasks well. Documentation was concentrated in one packet from previous officers thankfully. I made it an important task to update that packet and continue with embedding documentation in processes. Another important initiative I led was holding regular officer meetings, ensuring everyone was in the loop, and keeping a trail of meeting notes. This documentation helped officers how to tackle new responsibilities.
 
-That's why restructuring Mobi overall was important. I lead with empathy first, understanding who Mobi's audience was. This involved talking to members throughout meetings and any promotional event. I spent a lot of time trying to understand where members were receptive, why they were at Mobi, and how we could get them to keep on coming to Mobi.
+Additionally, officers didn't have specified roles which made delegating tasks confusing; officer positions were either officers, vice president, or president. It typically ended up with a few officers doing most of the same tasks which really slowed operations down greatly. I brought this up during meetings and worked with officers to create a new structure where officers had a specialization. This helped greatly with communicating officer positions during officer recruitment and scoping responsibilities.
 
-I realized that at the core, Mobi's old logo, represented by a hexagon, was actually everything was wrong with Mobi. It didn't feel inclusive or fun. Our posters felt lacking in friendliness.
+## Execution: Culture
 
-So as a designer, I set out to redesign everything to communicate more clearly. Every point of communication will be geared towards including members and encouraging folks to come on by. This included elevator pitches, invitations, email campaigns, brochures, and flyers. They all have some way to join the club. I call it slippery slope UX. It's very low friction for anyone to join and feel included in the club.
+The next step was to rebrand Mobi as a whole. Mobi has two main regular events: social coding and workshops. The workshops were similar to university lectures with topics scoped to popular technologies and tools. Social coding was just a time to socialize with people who code. These events, while educational, did little to encourage members to feel included. Members would often fall behind, not keep up, and feel overwhelmed by workshops. Social coding felt isolated as people mostly kept to themselves.
 
-Events and workshops will not be the speaker talking 80% of the time and way more interactive. Officers will go up to members and encourage them individually. People have more room to breathe and ask questions. I focus my attention on helping people _sitting in the back_ rather the front because I know that's where I would sit if I'm intimidated.
+To each case, I would experiment with something small and gather data to see how it affected members. For example, I would revamp a workshop presentation format, and ask if things felt helpful each time. I created surveys to determine skill level, which lead me to discover that most people were beginners at industry technologies. Even graduate students only had minimal experience, but wanted to learn. Additionally, to nail socializing, I actually learned from another student organization: AIGA (the American Institute of Graphic Arts). When I went to their events, members and officers did events that guaranteed inclusion for everyone. They often were more hands-on with their members which lead me to notice how statisfied they all were.
 
-And even during officer meetings, they aren't random. They're structured with prioritized milestones, goals, and documentation. A lot of these changes weren't just by me but in collaboration with my team. I facilitated a culture of empathy and care, so everyone was involved at every inflection point.
+After this research step, I decided to rebrand Mobi part-by-part. I started by clarifying and making Mobi's mission clear. Members were often confused what they were supposed to do or be at Mobi.
 
-## Learnings
+I decided to write a clear statement: At Mobi, you will be guaranteed to learn a new industry skill by the end of the meeting. I knew the paint points of listening to a lecture and seeing people walk out or fall asleep on it. It doesn't help that I could see members closing their laptops as we were coding along examples.
 
-I learned that leadership isn't hard because of having power; it's the responsibility of making choices to empower everyone. These choices can be super heavy and you'll forever be in the back seat pushing everyone forwards. It takes a lot out of a person, but seeing people succeed is worth it.
+Taking this into account, I took my learnings from AIGA and introduced small, bite-sized Mobi Bytes Workshops that were 80% hands-on exercise over lecture. I would not stand at the podium the entire time and assist with members directly over the workshop. I would pad out time to help catch members up knowing new concepts were overwhelming.
+
+This approach surprised me. Numbers steadily grew, but most importantly, I noticed members that would consistently _return_ to meetings over the semester. This would only happen to friends of officers previously!
+
+I would apply the same approach to social coding where I would encourage officers to spend all their time socializing with other members. We just needed to get to know them and help them feel comfortable at Mobi events.
+
+## Execution: Evolution
+
+This led to Mobi's network expanding greatly. To expand Mobi's network further, I continued to network with other clubs like AIGA, GDC, (Game Developer's Club), CSEC (Cybersecurity Club), and ACM (the Association for Computing Machinery) to learn from people outside my understanding. I learned a lot about their operating procedure, and they learnt from us. We eventually began sharing members and officers between each other, leading to university-wide collaborations.
+
+The most significant collaboration, Project Temple or Octapoints, evolved Mobi beyond initial goals. Project Temple is a 20 person summer collaboration between Mobi and CSEC to mentor members software engineering, cybersecurity, and professional skills. It involved working in a simulated agile environment and team building a mobile app for university organizations. The community and networking this provided was immense. Participants often became officers and friends leading initiatives across the university.
+
+For Mobi, I finalized and celebrated Mobi's rebirth and evolution by redesigning the club's brand, logo, and ephemera to leave a lasting, friendly legacy. Mobi will go from hexagon and lecture to coding, fun, and play. I combined all my learnings and led events with at least 30 to 70 members. Additionally, Mobi's new officers often led in huge university departmental events like the HackUTA 24-hour and 300+ person hackathon.
+
+## Reflection
+
+There were so many positives and negatives to leadership. Most of my journey at Mobi was having to solving problems and reacting to opportunities on the fly. It was worth it though. I grew both as a person and professional, and I realized that rising to the occasion when opportunity arose was deeply rewarding! I discovered I loved serving people — I loved seeing people grow and do amazing things!
