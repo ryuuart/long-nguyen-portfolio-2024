@@ -58,7 +58,7 @@ Some choices I made were based on guesses and assumptions for the underlying tec
 
 This is because I was relying on the WebAnimations API and CSS to handle looping animations. It turned out that this API relied on using keyframes and CSS animations under the hood. This made _continual and infinite_ animations very difficult. The truth is, I viewed the problem incorrectly. CSS animations and keyframes solve a subset of animation problems that begin and end. Another name for _continual and infinite_ animations are actually physics simulations. They run under a render loop that updates its animation state over time in the simulation. No matter what I did, the WebAnimations API wouldn't be able to support this use case. I chose the WebAnimations API because the animation and render logic would happen _off the main thread_ and leverage hardware acceleration using the GPU.
 
-I supported animating in any situation possible by creating abstractions for a `Simulation`. I developed `step` function that would advance the `Simulation` state. The main drawback is now I have to handle the complexities of the browser render pipeline and main thread.
+I supported animating in any situation possible by creating abstractions for a "physics" `Simulation`. I developed `step` function that would advance the `Simulation` state. The main drawback is now I have to handle the complexities of the browser render pipeline and main thread.
 
 ## Solving Performance
 
@@ -70,9 +70,9 @@ I spent many iterations and rewrites attempting to discern where performance was
 
 For MANAWAVE's latest iteration, I exploited a series of performance optimizations.
 
-First, the architecture of the library would use a game development principle: separate render and system logic. Render logic refers to the code that animates and paints the marquee elements on the screen. System logic refers to any calculations required for the state of each marquee. For example, calculating the position of each marquee item is under system logic. I treat system logic calculations similar to a physics simulation update in game development. This would create a hard separation of concerns prevent system logic from unnecessarily triggering DOM updates. It simplified and isolated performance pain points when it came to optimizing them.
+The architecture of the library would use a game development principle: separate render and system logic. I treat system logic calculations similar to a physics simulation update in game development. This would create a hard separation of concerns prevent system logic from unnecessarily triggering DOM updates. It simplified and isolated performance pain points when it came to optimizing them.
 
-Second, I applied the following after a lot of experimentation and back-and-forth debugging:
+Then, I applied the following after a lot of experimentation and back-and-forth debugging:
 
 - `absolute` positioning to reduce the cost of a reflow
 - CSS transforms to use GPU compute off the main thread to "create" and "delete" elements
@@ -81,6 +81,6 @@ Second, I applied the following after a lot of experimentation and back-and-fort
 - a single, shared `requestAnimationFrame` for all marquees since multiple results in worse performance
 - minimizing the amount DOM `Element` cloned
 
-Each of these points could include an entire article for each. The browser is complex. A lot of web frameworks actually optimize on each of these points because they follow a similar principle of managing state and rendering it (React). Essentially, getting logic and state to render on the browser means computing it separately then making optimized render transactions on the browser. The points I listed solve most performance bottlenecks by moving any blocking operations off the main thread. When I need to interact with the main thread, it's concentrated and optimized for that single transaction.
+Essentially, getting logic and state to render on the browser means computing it separately then making optimized render transactions on the browser. The points I listed solve most performance bottlenecks by moving any blocking operations off the main thread. When I need to interact with the main thread, it's concentrated and optimized for that single transaction.
 
 This resulted in a major performance boost from 100s of elements breaking or stuttering any website to near instantaneous animation and renders (<5 ms to calculate, layout, paint styles).
