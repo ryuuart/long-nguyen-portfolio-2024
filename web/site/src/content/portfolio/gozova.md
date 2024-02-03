@@ -11,3 +11,33 @@ link:
 ---
 
 My role at Gozova, in a collaborative effort with the designer, involved developing, enhancing, and implementing some UI/UX solutions. I developed one React Native screen to track and rate delivery driver performance. I constructed an entire storage website to reduce burdens on the storage sales team. I enhanced the current website implementation to match more closely with Gozova's new brand. Next, I developed a blog website to increase our SEO ratings. I lastly designed and implemented a UX solution to enhance opportunities in the checkout experience. The main goal was to both provide the marketing team data and enable a safer checkout experience.
+
+## Technologies Used
+
+- React
+- Gatsby
+- Bootstrap
+- React Native
+- Expo
+
+## Challenges
+
+Gozova's codebase had been operating for years with some tech debt. The front end is loosely documented, but is based on Bootstrap, Gatsby, and React depending on service. Since Gozova needed to scale its front-end some more with new UX focus, refactoring and mitigating tech debt would be key.
+
+## Approach
+
+My approach to refactoring was to chunk and break up components to further be composable and re-usable. Then, I would do the same for the CSS styling.
+
+This came with some hiccups. Bootstrap and older CSS styles would collide with each other in specificity and cascade. Also, some components were built for single use, but now need to be scaled to be reusable. This makes refactoring about understanding pain points first.
+
+I decided to focus on refactoring while ensuring there were no visible changes. I would reimplement styles and components. When I can guarantee that my changes wouldn't break existing code, I would build and extend features regularly.
+
+One problem I didn't expect was working with older dependencies. Since front-end tech moves quickly, documentation and resources for older versions would be buried. As I implemented more changes and features to the codebase, the first approach I found wouldn't be sufficient. I had to measure them under a criteria and ensure it would be compatible with the codebase.
+
+I experimented and tried to update the dependencies. It was a mistake. Everything broke. I learned that updating software dependencies isn't the same as updating software as an end user. Dependencies and versions matter deeply. I learned about the significance of semantic versioning and why updating major versions is closer to a migration than update. I realized that it's fine keeping things older versions as long as the code works, delivers value, and is stable.
+
+After keeping these concerns in mind and refactoring the codebase, implementing front end features were straightforward. I translated UX design into implementation.
+
+## Reflection
+
+It was my first time working with an established codebase and team at Gozova. Not only did I have to implement new features, but I had to ensure that my personal coding beliefs and styles melded with the team. There were times where I wondered why we didn't use the latest and "greatest" new technologies. I learned the importance of stability and focus. New technologies don't always translate to better productivity. There were costs in adopting new things just because. I realized that tempering an existing codebase and building features with what I had on hand turned out to be extremely productive. I learned that working in an established codebase meant having consideration for others. I enjoyed not only writing new features, but also bettering the quality of the codebase for the team.
