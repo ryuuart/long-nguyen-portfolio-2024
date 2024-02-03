@@ -20,11 +20,11 @@ I designed and developed a bespoke website that captures the feelings of a frien
 
 The North Dallas Developer User Group has consistently worked with Zeal IT Consultants to empower the local developer community. To promote brand awareness and trust, we redesigned and developed a new website sponsored entirely by Zeal. The redesign involved migrating over 10 years of old content into markdown posts. I mainly lead the website development front of this, and the result is a website that is an evolution of the old website's format.
 
-## How it was built
+## Challenges
 
 Plano Kendo dojo was the first time I ever negotiated, designed, and deployed a website to a client. It was very hard to scope my ambitions and the limits of the project. I weighed between multiple design decisions and unconventional decisions that ultimately made the project much more time-consuming and difficult than it needed to be. For example, I worked with a loose, broken grid which made ensuring layout and spacing consistency to be very time consuming. Also, I struggled with the complexities of CSS specificity and applying styles at scale. Despite the obstacles, it was worth it since now, the website is bespoke and personable to specifically Plano Kendo Dojo.
 
-For the North Dallas Developer User Group, I utilized Node.js as a scripting language to scrape and migrate decade old posts to markdown. It was my first time experiencing JavaScript off the browser which took some learning. Overall, we refreshed the design from tabular layout to a modern flexbox layout. It's powered by the Eleventy static site generator to easily connect to a CMS for any new posts, including the legacy, old posts.
+For the North Dallas Developer User Group, I utilized Node.js as a scripting language to scrape and migrate decade old posts to markdown. It was my first time experiencing JavaScript off the browser which took some learning. Overall, we refreshed the design from tabular layout to a modern flexbox layout. It's powered by the Eleventy static site generator to easily connect to a CMS for any new posts, including the legacy, old posts. Eleventy was my first time working with a headless CMS architecture. I spent some time wrapping my head around using templating and vanilla HTML, CSS, and JavaScript to scale websites instead of React components.
 
 ## Learnings
 
