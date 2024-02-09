@@ -2,9 +2,16 @@
 interface Props {
   src: string;
   alt?: string;
+  width?: string;
 }
 
-const { src, alt = "" } = Astro.props;
+const { src, alt = "", width = "10000" } = Astro.props;
 ---
 
-<img decoding="async" src={src} alt={alt} />
+<img decoding="async" src={src} alt={alt} width={width} />
+
+<style>
+  img {
+    display: block;
+  }
+</style>
