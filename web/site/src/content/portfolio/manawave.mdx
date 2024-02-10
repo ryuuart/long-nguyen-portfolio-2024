@@ -10,7 +10,18 @@ link:
   url: "https://manawave.art"
 ---
 
-[MANAWAVE](https://manawave.art) is my customized and open-source JavaScript marquee library coded entirely from scratch. It represents a vision of something I wished on the web: an omnidirectional (able to move in 360 degrees) marquee component. I treated it as both an engineering and creative challenge to demonstrate what 8 years of accumulated coding and creative experience produces.
+import Image from "../../components/Image.astro";
+
+[MANAWAVE](https://manawave.art) is my customized and open-source JavaScript marquee
+library coded entirely from scratch. It represents a vision of something I wished
+on the web: an omnidirectional (able to move in 360 degrees) marquee component. I
+treated it as both an engineering and creative challenge to demonstrate what 8 years
+of accumulated coding and creative experience produces.
+
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Art/Cover-WiWnRaAWBaeG6qlCSLaSdmtWtSmefa.webp"
+  alt="Deep blue metalheart sculpture surrounding by energy and lights. Contains futuristic text and elements showing off MANAWAVE features"
+/>
 
 ## Technologies & Stack
 
@@ -60,6 +71,11 @@ This is because I was relying on the WebAnimations API and CSS to handle looping
 
 I supported animating in any situation possible by creating abstractions for a "physics" `Simulation`. I developed `step` function that would advance the `Simulation` state. The main drawback is now I have to handle the complexities of the browser render pipeline and main thread.
 
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Mobile/Subpages-mkH1xldXAkSaIHy511sNdetW5OsXc5.webp"
+  alt="3 mobile MANAWAVE subpages showcasing different creative concepts and examples of MANAWAVE in practice"
+/>
+
 ## Solving Performance
 
 Browsers are limited by their reliance on a single main thread to calculate and render the state of the DOM. Repeated updates to the DOM is a major performance risk caused by layout thrashing. Marquees have the potential to update 100s of DOM elements on any given page. I realized optimizing the DOM and minimizing layout thrashing would be key for MANAWAVE.
@@ -83,7 +99,7 @@ Then, I applied the following after a lot of experimentation and back-and-forth 
 
 Essentially, getting logic and state to render on the browser means computing it separately then making optimized render transactions on the browser. The points I listed solve most performance bottlenecks by moving any blocking operations off the main thread. When I need to interact with the main thread, it's concentrated and optimized for that single transaction.
 
-This resulted in a major performance boost from 100s of elements breaking or stuttering any website to near instantaneous animation and renders (<5 ms to calculate, layout, paint styles).
+This resulted in a major performance boost from 100s of elements breaking or stuttering any website to near instantaneous animation and renders (\<5 ms to calculate, layout, paint styles).
 
 ## Solving testing
 
@@ -108,6 +124,11 @@ I used CSS grid to enforce a modular grid across the [demo site](https://manawav
 
 While learning Blender to make a light simulation, I learned more deeply about compositing blend modes. I used this opportunistically with CSS to determine if I could make experimental effects and optimizations. I used blend modes with video to create a novel glowing text effect on the front page to wow my audience. I'm proud that it uses a relatively cheap webm video and overlay blend mode text. It's something I would expect in more complex webgl or canvas solutions, but I used pure HTML and CSS. I'm even more proud of using blend modes to apply colors to a single animated image. Instead of having 3 images for different colors, I used blend modes to apply color to only one. This saves a significant amount of bandwidth since the images are animated.
 
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Mobile/Home-7RWBlTAgtxHlMPJoFzdE8KZ29ZlDbq.webp"
+  alt="MANAWAVE mobile home page showing a bright blue star and links to artistic examples. Contains futuristic accents, poetry, and sparkles."
+/>
+
 ## Solving the documentation website
 
 I used the Starlight template for Astro to focus on writing documentation content. Writing documentation and step-by-step guides turned out to be way harder than I ever imagined. Trying to communicate my features comprehensively turned out to be exhausting. It's like writing a book unknowingly; it's a serious investment. I was able to get close, but I wish wrote documentation alongside developing features for my code. Not only does it clarify what my code actually does, it can identify pain points in developer experience. I was exhausted because I spent so much effort recalling my choices, decisions, and intuition. In the future, I'm hoping to automate reference documentation from code comments. Then, I want to rely on a better process to document code while developing features.
@@ -116,6 +137,32 @@ I wrote my documentation inspired by Astro's documentation. It focused less on d
 
 One experiment I tried was by implementing a customized playground for developers. I used Sandpack, a developer playground that'll allow users to code and see their results live from the browser. It was worth it because not only can I explain the code in the documentation guides, it's very easy to _show_ users rather than spend ages _telling_.
 
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Desktop/Docs-mPVqvN84iocxENnyTe3zZQwU3oUPcU.webp"
+  alt="MANAWAVE documentation site showing a quick start and code playground to get started"
+/>
+
 ## Reflection
 
 MANAWAVE is truly my own project and endeavor. I couldn't Google "how to make MANAWAVE". I realized that discovering how to make things work my own way was thrilling. It comes from my heart, imagination, and problem-solving — with my own two hands. MANAWAVE took way longer than I ever imagined. Even though I have released it to the public, and you can use it on a website now, I consider MANAWAVE incomplete. I'm not sure if any open-source project is ever truly done. I want to make it even better because I obssessed with what it could be.
+
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Desktop/Home-t4FTzUR1vn28287k9HnAx7ya5QOZT2.webp"
+  alt="MANAWAVE desktop home page showing a bright foggy blue star on top and links on the bottom. Contains futuristic accents, poetry, and sparkles."
+/>
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Desktop/Subpages-bhV7tr2cr3aLfRa75HE1LOuLnpJbFC.webp"
+  alt="3 subpages of the MANAWAVE site portraying different artistc examples and concepts for MANAWAVE's usage"
+/>
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Art/Forum%20Concept-NW02GarslDBV5sUKDQDSXyjQ6PmQsP.webp"
+  alt="Conceptual forum with user profiles on the left and inspirational forum posts on the right. It's all tinted blue and translucent."
+/>
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Art/Forum%20Signature-HcjC1BbPDRj8HgTxc8bRKkCPzF0Yot.webp"
+  alt="A blue forum signature describing the MANAWAVE project. There is a metalheart sculpture in the background with swirling lights, energy."
+/>
+<Image
+  src="https://clyxyzy3mertqxf9.public.blob.vercel-storage.com/Pictures/MANAWAVE/Art/Misc-7zmMJCyoyu3a1N7DgadKAlDwYUtAT1.webp"
+  alt="There are two pictures. Blue metalheart sculpture on the left with swirling lights, energy, and futuristic user interface parts. On the right, a purple-blue tinted face lit in darkness with warped text overlaid"
+/>
