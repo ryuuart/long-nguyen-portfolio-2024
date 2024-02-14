@@ -1,8 +1,10 @@
 # Long Nguyen Portfolio 2024
 
-**THIS PORTFOLIO IS WORK IN PROGRESS**
+My portfolio site for viewing. I use Astro entirely to author and build all content.
 
-I've developed an MVP for temporary use.
+## Future Work
+
+I will eventually migrate to using Notion as a CMS.
 
 ## License
 
